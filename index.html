@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css">
+    <title>VueJS</title>
+</head>
+<body>
+
+    <div id="app">
+        <nav class="navbar navbar-light linearGradient">
+            <a class="navbar-brand text-light" href="#">Name</a>
+          </nav>
+          <div class="row float-right mt-5 mr-5">
+              <div class="col-md-2">
+                 <span class="border border-primary btn">Cart({{ cart.length }})</span>
+              </div>
+          </div>
+          <product :premium="premium" :cart="cart"  @add-to-cart="updateCart"  @remove-to-cart="removeFromCart"></product>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

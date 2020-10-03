@@ -1,0 +1,28 @@
+body{
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .linearGradient{
+            background: linear-gradient(-90deg, #84CF6A, #16C0B0);
+        }
+
+        .color-box{
+            width: 40px;
+            height: 40px;;
+        }
+
+        .outOfStock{
+            text-decoration: line-through;
+        }
+
+        .tabs span{
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            border-left: 1px solid rgba(0, 0, 0, 0.2);
+            border-right: 1px solid rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            padding: 15px 15px 0 15px;
+        }
+        .activeTab{
+            color: #16C0B0;
+            font-size: 20px;
+        }
